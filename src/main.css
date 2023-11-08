@@ -1,0 +1,23 @@
+* {
+  padding: 20px;
+}
+
+html,
+body,
+body > * {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  min-height: 100vh;
+  background-color: #999;
+}
+
+ul,
+li {
+  padding: 0;
+}
