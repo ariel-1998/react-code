@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import useCustomMemo from "./useCustomMemo";
 
-type ImplementCustomUseMemoProps = {};
-
-const ImplementCustomUseMemo: React.FC<ImplementCustomUseMemoProps> = ({}) => {
+const ImplementCustomUseMemo: React.FC = () => {
   const [count, setCount] = useState(0);
   const [_, setRender] = useState(false);
   const increment = () => {

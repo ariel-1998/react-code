@@ -7,17 +7,8 @@ export type FileTreeType = {
   children?: FileTreeType[];
 };
 
-export type FileTreeFolderType = FileTreeType & {
-  type: "folder";
-  children: FileTreeType[];
-};
-
-export type FileTreeFileType = Omit<FileTreeType, "children"> & {
-  type: "file";
-};
-
 export const fileTree: FileTreeType = {
-  id: uuidV4(),
+  id: "root",
   name: "root",
   type: "folder",
   children: [
