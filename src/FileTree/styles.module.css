@@ -1,0 +1,19 @@
+.folder {
+  cursor: pointer;
+}
+
+.children {
+  padding-left: 20px;
+}
+
+.file {
+  cursor: default;
+}
+
+.folderFill {
+  fill: yellow;
+}
+
+.fileFill {
+  fill: white;
+}
