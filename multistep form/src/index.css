@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+form {
+  margin: auto;
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid black;
+  padding: 40px;
+  border-radius: 10px;
+  margin-top: 50px;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.steps {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+.form {
+  margin-top: 20px;
+  display: grid;
+  justify-content: flex-start;
+  grid-template-columns: auto minmax(auto, 400px);
+  gap: 20px;
+}
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+label {
+  font-size: 1.1rem;
+}
+
+input {
+  font-size: 1.1rem;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+
+button {
+  padding-inline: 10px;
+  padding-block: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
